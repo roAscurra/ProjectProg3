@@ -4,19 +4,22 @@
       "id": 1,
       "nombre": "Pizza",
       "descripcion": "Deliciosa pizza recién horneada.",
-      "precio": "$10.99"
+      "precio": "$4000",
+      "responsable": "José"
     },
     {
       "id": 2,
       "nombre": "Tacos",
       "descripcion": "Tacos sabrosos con ingredientes frescos.",
-      "precio": "$8.99"
+      "precio": "$2500",
+      "responsable": "Juan"
     },
     {
       "id": 3,
       "nombre": "Hamburguesa",
       "descripcion": "La mejor hamburguesa en la ciudad.",
-      "precio": "$9.99"
+      "precio": "$4500",
+      "responsable": "Pedro"
     }
   ]
 }
