@@ -1,10 +1,8 @@
 // En tu archivo app.js
 import { getProductById } from './data.js';
-console.log(20)
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
-  
     if (productId) {
       getProductById(productId)
         .then((product) => {
