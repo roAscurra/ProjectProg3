@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+            <a class="navbar-brand" href="#" id="title">EL BUEN SABOR</a>
+            <ul class="sections">
+                <li><a class="links" href="#">SHOP <option value=""></option></a></li>
+                <li><a class="links" href="#">CONTACT</a></li>
+                <li><a class="links" href="#">LOGIN</a></li>
+                <li><a class="links" href="#"> <img src="/img/cart-icon.svg" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+<div class="platos" id="pizza">
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card"
+                    style="max-width: 80%;margin: 0 auto;display: flex; flex-direction: row;flex-wrap: wrap; border: 0;">
+                    <div class="card-img-left" style="">
+                        <img src="/img/pizza.jpg" alt="..." style="max-width: 100%; height: auto; max-height: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-body" style="width: 50%;display:flex;justify-content: center;align-items: center;"
+                    >
+                    <div class="card-text text-center" style="text-align: center;">
+                        <h1>Pizza Especial</h1>
+                        <p>Deliciosa pizza recién horneada.</p>
+                        <h1>$ 4000</h1>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-btn">
+                                <button id="menos" class="btn btn-default" type="button">-</button>
+                            </span>
+
+                            <span class="input-group-btn">
+                                <input type="number" id="contador" class="" value="1" min="1" style="width: 50px;"/>
+                            </span>
+
+                            <span class="input-group-btn">
+                                <button id="mas" class="btn btn-default" type="button">+</button>
+                            </span>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Estado</option>
+                                <option value="1">Preparado</option>
+                                <option value="2">En cocina</option>
+                                <option value="3">Listo</option>
+                              </select>
+                        </div>
+                            <p><b>Responsable:</b> cocinero</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <br>
+<div class="platos" id="tacos">
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card"
+                    style="max-width: 80%;margin: 0 auto;display: flex; flex-direction: row;flex-wrap: wrap; border: 0;">
+                    <div class="card-img-left" style="">
+                        <img src="/img/tacos.jpg" alt="..." style="max-width: 100%; height: auto; max-height: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-body" style="width: 50%;display:flex;justify-content: center;align-items: center;"
+                    >
+                    <div class="card-text text-center" style="text-align: center;">
+                        <h1>Tacos de carne</h1>
+                        <p>Tacos sabrosos con ingredientes frescos.</p>
+                        <h1>$ 2500</h1>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-btn">
+                                <button id="menos" class="btn btn-default" type="button">-</button>
+                            </span>
+
+                            <span class="input-group-btn">
+                                <input type="number" id="contador" class="" value="1" min="1" style="width: 50px;"/>
+                            </span>
+
+                            <span class="input-group-btn">
+                                <button id="mas" class="btn btn-default" type="button">+</button>
+                            </span>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Estado</option>
+                                <option value="1">Preparado</option>
+                                <option value="2">En cocina</option>
+                                <option value="3">Listo</option>
+                              </select>
+                        </div>
+                            <p><b>Responsable:</b> cocinero</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <br>
+    <div class="platos" id="hamburguesa">
+
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card"
+                    style="max-width: 80%;margin: 0 auto;display: flex; flex-direction: row;flex-wrap: wrap; border: 0;">
+                    <div class="card-img-left" style="">
+                        <img src="/img/hamburguesa.jpg" alt="..." style="max-width: 100%; height: auto; max-height: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-body" style="width: 50%;display:flex;justify-content: center;align-items: center;"
+                    >
+                    <div class="card-text text-center" style="text-align: center;">
+                        <h1>Buruguer Americana</h1>
+                        <p>La mejor hamburguesa en la ciudad.</p>
+                        <h1>$ 4500</h1>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-btn">
+                                <button id="menos" class="btn btn-default" type="button">-</button>
+                            </span>
+
+                            <span class="input-group-btn">
+                                <input type="number" id="contador" class="" value="1" min="1" style="width: 50px;"/>
+                            </span>
+
+                            <span class="input-group-btn">
+                                <button id="mas" class="btn btn-default" type="button">+</button>
+                            </span>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Estado</option>
+                                <option value="1">Preparado</option>
+                                <option value="2">En cocina</option>
+                                <option value="3">Listo</option>
+                              </select>
+                        </div>
+                            <p><b>Responsable:</b> cocinero</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Información de Contacto</h3>
+                    <p>Dirección: 123 Calle Principal, Ciudad</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                    <p>Correo Electrónico: info@example.com</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Redes Sociales</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.facebook.com/tucuenta" target="_blank" class="link"> Facebook</a></li>
+                        <li><a href="https://twitter.com/tucuenta" target="_blank" class="link">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/tucuenta" target="_blank" class="link">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const plato = urlParams.get('plato');
+    
+            if (plato) {
+                // Oculta todas las tarjetas con la clase .card-body
+                const allCards = document.querySelectorAll('.platos');
+                allCards.forEach(card => {
+                    card.style.display = 'none';
+                });
+    
+                // Muestra la tarjeta específica
+                const targetCard = document.getElementById(plato);
+                if (targetCard) {
+                    targetCard.style.display = 'block';
+                }
+            }
+        });
+    </script>
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script></body>
+</body>
+</html>
