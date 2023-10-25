@@ -19,12 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const productDetailContainer = document.getElementById('product-detail');
   
     const cardHTML = `
-      <div class="container">
+      <div class="container" id=${product.id}>
         <div class="row">
           <div class="col-md-6">
             <div class="card" style="max-width: 80%; margin: 0 auto; display: flex; flex-direction: row; flex-wrap: wrap; border: 0;">
               <div class="card-img-left">
-                <img src="/img/${product.nombre.toLowerCase()}.jpg" alt="${product.nombre}" style="max-width: 100%; height: auto; max-height: 100%;">
+              <img src="/img/${product.nombre.toLowerCase()}.jpg" alt="${product.nombre}" style="max-width: 100%; height: auto; max-height: 100%;">
               </div>
             </div>
           </div>
@@ -36,27 +36,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h1>${product.precio}</h1>
                 <div class="input-group input-group-sm">
                   <span class="input-group-btn">
-                    <button id="menos" class="btn btn-default" type="button">-</button>
+                    <button id="menos" class="btn btn-primary" type="button">-</button>
                   </span>
                   <span class="input-group-btn">
-                    <input type="number" id="contador" class="" value="1" min="1" style="width: 50px;">
+                    <input type="number" id="contador" class="form-control" value="1" min="1" style="width: 50px;">
                   </span>
-                  <span class="input-group-btn">
-                    <button id="mas" class "btn btn-default" type="button">+</button>
+                  <span class="input-group-btn" style="margin-right:10%;">
+                  <button id="mas" class="btn btn-primary" type="button">+</button>
                   </span>
                   <select class="form-select" aria-label="Default select example">
-                    <option selected>Estado</option>
+                  <option selected>Estado</option>
                     <option value="1">Preparado</option>
                     <option value="2">En cocina</option>
                     <option value="3">Listo</option>
                   </select>
                 </div>
+                <br>
                 <p><b>Responsable:</b> ${product.responsable}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <br>
     `;
   
     productDetailContainer.innerHTML = cardHTML;
