@@ -2,23 +2,39 @@
   "productos": [
     {
       "id": 1,
-      "nombre": "Pizza",
+      "img": "/img/pizza.jpg",
+      "nombre": "Pizza Especial",
       "descripcion": "Deliciosa pizza recién horneada.",
+      "estado": "Por testear",
       "precio": "$4000",
       "responsable": "José"
     },
     {
       "id": 2,
-      "nombre": "Tacos",
+      "nombre": "Tacos de carne",
+      "img": "/img/tacos.jpg",
       "descripcion": "Tacos sabrosos con ingredientes frescos.",
+      "estado": "Por hacer",
       "precio": "$2500",
       "responsable": "Juan"
     },
     {
       "id": 3,
-      "nombre": "Hamburguesa",
+      "img": "/img/hamburguesa.jpg",
+      "nombre": "Hamburguesa Americana",
       "descripcion": "La mejor hamburguesa en la ciudad.",
+      "estado": "En produccion",
       "precio": "$4500",
+      "responsable": "Pedro"
+    }
+    ,
+    {
+      "id": 4,
+      "img": "/img/empanadas.jpg",
+      "nombre": "Empanadas de carne",
+      "descripcion": "Las mejores empanadas con carne de cerdo.",
+      "estado": "completada",
+      "precio": "$1800",
       "responsable": "Pedro"
     }
   ]

@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   function mostrarProducto(product) {
-    console.log('Mostrar producto:', product); // Agrega este log para verificar si la función se llama correctamente
+    console.log('Mostrar producto:', product); // Agrega este log para verificar si la función se llama correctamente  
 
     const productDetailContainer = document.getElementById('product-detail');
   
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="col-md-6">
             <div class="card" style="max-width: 80%; margin: 0 auto; display: flex; flex-direction: row; flex-wrap: wrap; border: 0;">
               <div class="card-img-left">
-              <img src="/img/${product.nombre.toLowerCase()}.jpg" alt="${product.nombre}" style="max-width: 100%; height: auto; max-height: 100%;">
+              <img src="${product.img}" alt="${product.nombre}" style="max-width: 100%; height: auto; max-height: 100%;">
               </div>
             </div>
           </div>
@@ -45,10 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
                   <button id="mas" class="btn btn-primary" type="button">+</button>
                   </span>
                   <select class="form-select" aria-label="Default select example">
-                  <option selected>Estado</option>
-                    <option value="1">Preparado</option>
-                    <option value="2">En cocina</option>
-                    <option value="3">Listo</option>
+                  <option>Estado</option>
+                    <option value="Por hacer">Por hacer</option>
+                    <option value="En produccion">En produccion</option>
+                    <option value="Por testear">Por testear</option>
+                    <option value="Completada">Completada</option>
                   </select>
                 </div>
                 <br>
@@ -62,6 +63,20 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
   
     productDetailContainer.innerHTML = cardHTML;
+    const estadoSelect = document.getElementById('estado');
+    estadoSelect.innerHTML = ''; // Limpiar las opciones existentes
+  
+    product.estados.forEach((estado) => {
+      const option = document.createElement('option');
+      option.value = estado.valor;
+      option.textContent = estado.nombre;
+  
+      if (estado.valor === product.estado) {
+        option.selected = true;
+      }
+  
+      estadoSelect.appendChild(option);
+    });
   }
   
 
